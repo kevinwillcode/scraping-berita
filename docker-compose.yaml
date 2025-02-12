@@ -1,0 +1,11 @@
+
+services:
+  scraping-berita:
+    build :
+      context: .
+      dockerfile: Dockerfile
+    image: scraping-berita:v1
+    container_name: scraping-berita
+    restart: always
+    ports:
+      - "3000:3000"
